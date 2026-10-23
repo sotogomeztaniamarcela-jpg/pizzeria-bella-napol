@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bella Napoli | Pizzería</title>
+  <meta name="description" content="Pizzería Bella Napoli en Canalete, Córdoba. Mira nuestro menú y pide por WhatsApp.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+  <a href="#inicio" class="logo">🍕 Bella Napoli</a>
+  <button id="btnMenu" class="hamburguesa" aria-label="Abrir menú">☰</button>
+  <nav id="nav" class="nav">
+    <a href="#inicio">Inicio</a>
+    <a href="#menu">Menú</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<main>
+  <section id="inicio" class="hero">
+    <div class="hero-texto">
+      <h1>Bella Napoli</h1>
+      <p class="eslogan">El sabor de Italia, horneado con cariño</p>
+      <a href="#menu" class="btn">Ver menú</a>
+      <a id="btnPedirHero" href="#" class="btn btn-wa">Pedir por WhatsApp</a>
+    </div>
+    <img class="hero-img"
+         src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=900"
+         alt="Pizza recién horneada">
+  </section>
+
+  <section id="menu" class="seccion">
+    <h2>Nuestro menú</h2>
+    <div class="filtros">
+      <button class="filtro activo" data-cat="todos">Todos</button>
+      <button class="filtro" data-cat="pizzas">Pizzas</button>
+      <button class="filtro" data-cat="entradas">Entradas</button>
+      <button class="filtro" data-cat="bebidas">Bebidas</button>
+      <button class="filtro" data-cat="postres">Postres</button>
+    </div>
+    <div id="gridMenu" class="grid"></div>
+  </section>
+
+  <section id="nosotros" class="seccion nosotros">
+    <h2>Nosotros</h2>
+    <p>Bella Napoli nació como un sueño familiar: llevar a Canalete el verdadero sabor de las pizzas italianas. Con masa preparada a diario, ingredientes frescos y mucho cariño, hemos crecido junto a nuestra comunidad, y hoy seguimos recibiendo a cada cliente como parte de la familia.</p>
+  </section>
+
+  <section id="contacto" class="seccion">
+    <h2>Contacto</h2>
+    <div class="contacto">
+      <div class="info">
+        <p>📍 <strong>Dirección:</strong> Canalete, Córdoba, Colombia</p>
+        <p>📞 <strong>Teléfono:</strong> 320 535 9482</p>
+        <p>🕒 <strong>Horario:</strong> Lunes a domingo, 5:00 p. m. – 11:00 p. m.</p>
+        <button id="btnUbicacion" class="btn">📡 Compartir mi ubicación en tiempo real</button>
+        <button id="btnDetener" class="btn btn-sec" hidden>Dejar de compartir</button>
+        <p id="estadoUbicacion" class="estado"></p>
+      </div>
+      <iframe id="mapa" title="Mapa de Bella Napoli" loading="lazy"
+        src="https://maps.google.com/maps?q=Canalete,Cordoba,Colombia&z=14&output=embed"></iframe>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2026 Bella Napoli · Todos los derechos reservados</p>
+</footer>
+
+<a id="btnWhatsApp" class="wa-flotante" href="#" target="_blank" rel="noopener" aria-label="Pedir por WhatsApp">💬 Pedir</a>
+<button id="btnSubir" class="subir" aria-label="Volver arriba">↑</button>
+
+</body>
+</html>
